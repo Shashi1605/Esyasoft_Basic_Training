@@ -1,6 +1,6 @@
 # Assignment 
 
-Create a Program to blink 5 times 
+Create a Program to blink Led 5 times 
 
 -----Approach----
 
