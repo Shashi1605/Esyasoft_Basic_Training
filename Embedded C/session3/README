@@ -1,0 +1,18 @@
+
+# ON_OFF_Blink
+
+used 3 LED
+->led1 in pin2(PD2)
+->led2 in pin5(PD5)
+->led3 in pin7(PD7)
+
+## Feature
+1--> led1 turn on always
+2--> led2 turn off after 0.5 sec and remain off
+3--> led3 toggle(Blink)
+
+
+
+
+
+
