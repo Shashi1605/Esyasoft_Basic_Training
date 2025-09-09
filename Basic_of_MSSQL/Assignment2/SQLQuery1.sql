@@ -45,6 +45,11 @@ insert into SmartMeterReadings values
 
 
 --- Task 1 
+--- Fetch all smart meter readings where
+--- 1. Energy consumed is between 10 and 50 Kwh
+--- 2.ReadingDateTime is between '2024-01-01' and '2024-12-31'
+--- 3. Exclude meters installed after '2024-06-30'
+
 select * from SmartMeterReadings
 where Energy_Consumed between 10 and 50
 	  and Reading_Date_time between '2024-01-01' and '2024-12-31'
@@ -53,6 +58,11 @@ where Energy_Consumed between 10 and 50
 
 
 --- Task 2
+--- For each customer calculate:-
+--- 1. Aerage Energy consumed rounded by two decimal place
+--- 2. Maximum energy consumed
+--- 3.Only include readings from the current year
+
 select Customer_id, round(avg(Energy_Consumed),2) as AvgEnergyConsumed, max(Energy_Consumed) as MaxEnergyConsumed
 from SmartMeterReadings
 where YEAR(Reading_Date_time) = 2024
