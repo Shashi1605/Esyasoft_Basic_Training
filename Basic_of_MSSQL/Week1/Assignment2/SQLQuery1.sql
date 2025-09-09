@@ -55,7 +55,9 @@ where Energy_Consumed between 10 and 50
 --- Task 2
 select Customer_id, round(avg(Energy_Consumed),2) as AvgEnergyConsumed, max(Energy_Consumed) as MaxEnergyConsumed
 from SmartMeterReadings
+where YEAR(Reading_Date_time) = 2024
 group by Customer_id
+
 
 
 
