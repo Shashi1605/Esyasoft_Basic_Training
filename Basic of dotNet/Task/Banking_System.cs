@@ -34,7 +34,7 @@
 
                 Console.WriteLine("Enter your option :");
 
-                // Step 2: Read the string input from the console.
+                //Reading the string input from the console
                 string input = Console.ReadLine();
 
                 int options;
