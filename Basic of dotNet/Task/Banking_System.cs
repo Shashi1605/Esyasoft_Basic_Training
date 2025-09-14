@@ -36,7 +36,6 @@
 
                 //Reading the string input from the console
                 string input = Console.ReadLine();
-
                 int options;
                 if (int.TryParse(input, out options) && options <=5 && options >0)
                 {
@@ -71,11 +70,11 @@
         {
             Console.WriteLine("Enter your Account number : ");
             int account = Convert.ToInt32(Console.ReadLine());
-
-            Console.WriteLine("Enter Amount to Deposite : ");
-            int amount = Convert.ToInt32(Console.ReadLine());
+            
             if (account == acc)
             {
+                Console.WriteLine("Enter Amount to Deposite : ");
+                int amount = Convert.ToInt32(Console.ReadLine());
                 Balance += amount;
                 Console.WriteLine("Amount Deposited Successfully");
             }
@@ -90,14 +89,17 @@
             Console.WriteLine("Enter your Account Number : ");
 
             int account = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter Amount to Withdraw : ");
-            int amount = Convert.ToInt32(Console.ReadLine());
 
             if(account == acc)
             {
+                Console.WriteLine("Enter Amount to Withdraw : ");
+                int amount = Convert.ToInt32(Console.ReadLine());
                 Balance -= amount;
                 Console.WriteLine("Amount Withdraw Successfully");
                 Console.WriteLine("------------------------------------");
+            }
+            else{
+                Console.WriteLine("Please Enter Valid Acount Number! ");
             }
         }
         
